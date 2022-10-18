@@ -69,3 +69,12 @@ class ShortNH {
     }
  
 }
+
+// example
+$s = new ShortNH;
+$st = "254725530198202210162";
+
+$short = $s->base62($st);
+$long = $s->unbase62($short);
+
+echo($short. "<br/>". $long);
